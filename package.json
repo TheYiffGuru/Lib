@@ -1,0 +1,26 @@
+{
+  "name": "yiff-guru",
+  "version": "1.0.0",
+  "description": "A module for interfacing with https://yiff.guru's api.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheYiffGuru/Lib.git"
+  },
+  "author": "Donovan_DMC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheYiffGuru/Lib/issues"
+  },
+  "homepage": "https://github.com/TheYiffGuru/Lib#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.25",
+    "@types/node-fetch": "^2.5.8"
+  }
+}
