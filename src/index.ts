@@ -50,14 +50,15 @@ export default class YiffGuru {
 		if (baseURL) this.baseURL = baseURL;
 	}
 
-	async createAlbum(title: string, tags?: string[], externalLinks?: ExternalLink[], artist?: string): Promise<SuccessResponse<Album> | FailureResponse> {
+	async createAlbum(title: string, description?: string, tags?: string[], externalLinks?: ExternalLink[], artist?: string): Promise<SuccessResponse<Album> | FailureResponse> {
 		return fetch(`${this.baseURL}/v${VERSION}/albums`, {
 			method: "POST",
 			body: JSON.stringify({
 				title,
+				description,
+				tags,
 				externalLinks,
-				artist,
-				tags
+				artist
 			}),
 			headers: {
 				"Authorization": this.apiKey,
